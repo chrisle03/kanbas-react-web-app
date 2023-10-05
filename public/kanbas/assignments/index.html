@@ -1,232 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Title</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     </head>
     <body>
-        <table border="0" width="100%">
-            <tbody> 
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="../profile/index.html">Account</a> 
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a> 
-                        </li>
-                        <li>
-                            <a href="home.html">Courses</a> 
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a> 
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a> 
-                        </li>
-                        <li>
-                            <a href="#">History</a> 
-                        </li>
-                        <li>
-                            <a href="#">Studio</a> 
-                        </li>
-                        <li>
-                            <a href="#">Commons</a> 
-                        </li>
-                        <li>
-                            <a href="#"">Help</a> 
-                        </li>
-                    </ul>
-                </td>
+        <div class="sidebar d-none d-lg-block">
+            <img src="../../images/Northeastern Logo.png" alt="nLogo" height="80" width="80"/>
+            <label for="sidebarToggle">
+                <a href="../profile/index.html">
+                    <i class="fas fa-user-circle icon-white"></i><br />
+                    Account
+                </a> 
+            </label>
+            <label for="sidebarToggle">
+                <a href="../dashboard.html">
+                  <i class="fas fa-tachometer-alt icon-red"></i><br />
+                  Dashboard
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a class="active" href="../home.html">
+                  <i class="fas fa-book icon-red"></i><br />
+                  Courses
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#">
+                  <i class="fas fa-calendar-alt icon-red"></i><br />
+                  Calendar
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#">
+                  <i class="fas fa-envelope icon-red"></i><br />
+                  Inbox
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="far fa-clock icon-red"></i><br />
+                  History
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="fas fa-network-wired icon-red"></i><br />
+                  Studio
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                <i class="fas fa-share-square icon-red"></i><br />
+                  Commons
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="fas fa-question-circle icon-red"></i><br />
+                  Help
+                </a>
+            </label>
+        </div>
+        
+        <div class="content">
+            <div class="container">
+                <div class="col"></div>
+                <div class="row" style="padding-top: 15px">
+                    <div class="col-10 d-none d-md-block">
+                        <h2 style="font-size: 17px">
+                            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <i
+                                      class="fas fa-bars fa-lg"
+                                      style="color: red; padding-right: 18px"
+                                    ></i>
+                                    <li class="breadcrumb-item">
+                                      <a href="#">CS4550.12631.202410</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                      Assignments
+                                    </li>
+                                </ol>
+                            </nav>
+                        </h2>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <button class="btn btn-secondary float-end">
+                            <i class="fas fa-glasses" style="color: black"> Student View</i>
+                        </button>
+                      </div>
+                    <hr/>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-none d-lg-block" style="width: 195px">
+                        <div
+                        style="margin-bottom: 20px; max-width: 150px; overflow: hidden"
+                        >
+                            <small
+                            style="
+                                display: inline-block;
+                                max-width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                "
+                            >
+                            202410_1 Fall 2023 Semester Full Term
+                            </small> 
+                        </div>
+                        <nav>
+                            <ul>
+                                <li">
+                                    <a href="../home.html">Home</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Modules</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Piazza</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Zoom Meetings</a> 
+                                </li>
+                                <li class="selected">
+                                    <a href="index.html">Assignments</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Quizzes</a> 
+                                </li>
+                                <li>
+                                    <a href="../grades.html">Grades</a> 
+                                </li>
+                                <li>
+                                    <a href="#">People</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Panopto Video</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Discussions</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Announcements</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Files</a>
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Rubrics</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Outcomes</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Collaborations</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Syllabus</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col" style="margin-bottom: -30px">
+                            <input
+                            class="form-control w-25"
+                            placeholder="Search for Assignment"/>
+                            </div>
+                            <div class="col-auto" style="margin-bottom: -30px">
+                                <button class="btn btn-secondary">+ Group</button>
+                                <button class="btn btn-danger">+ Assignment</button>
+                                <button class="btn btn-secondary">
+                                    <i
+                                    style="color: white"
+                                    class="fa fa-ellipsis-v"
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
 
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="../home.html">Home</a> 
-                        </li>
-                        <li>
-                            <a href="#">Modules</a> 
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a> 
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meetings</a> 
-                        </li>
-                        <li>
-                            <a href="index.html">Assignments</a> 
-                        </li>
-                        <li>
-                            <a href="#">Quizzes</a> 
-                        </li>
-                        <li>
-                            <a href="../grades.html">Grades</a> 
-                        </li>
-                        <li>
-                            <a href="#">People</a> 
-                        </li>
-                        <li>
-                            <a href="#">Panopto Video</a> 
-                        </li>
-                        <li>
-                            <a href="#">Discussions</a> 
-                        </li>
-                        <li>
-                            <a href="#">Announcements</a> 
-                        </li>
-                        <li>
-                            <a href="#">Pages</a> 
-                        </li>
-                        <li>
-                            <a href="#">Files</a> 
-                        </li>
-                        <li>
-                            <a href="#">Rubrics</a> 
-                        </li>
-                        <li>
-                            <a href="#">Outcomes</a> 
-                        </li>
-                        <li>
-                            <a href="#">Collaborations</a> 
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a> 
-                        </li>
-                        <li>
-                            <a href="#">Settings</a> 
-                        </li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <input  type="text"
-                            placeholder="Search for Assignments"
-                            title="tooltip"/>
-                    <button>Group</button>
-                    <button>Assignment</button>
-                    <select>
-                        <option>Edit Assignment Dates</option>
-                        <option>Export 1</option>
-                        <option>Export 2 </option>
-                    </select>
+                        <div style="padding-top: 35px"><hr /></div>
+                        <div class="col">
+                            <ul
+                            class="list-group"
+                            style="border-radius: 0; width: 940px; overflow: auto">
+                            <li class="list-group-item list-group-item-secondary py-2">
+                                <i class="fas fa-grip-vertical"></i>
+                                <i class="fas fa-caret-down"></i>
+                                <span style="font-weight: bold">Assignments</span>
+                                <div class="float-end">
+                                    <span
+                                    class="rounded-pill"
+                                    style="outline: solid thin black; padding: 4px">
+                                    40% of Total</span>
+                                    <i
+                                    class="fas fa-plus"
+                                    style="
+                                        font-size: small;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        color: gray;"
+                                    ></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </li>
 
-                    <h3> ASSIGNMENTS 40% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">A1 - ENV + HTML Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A2 - CSS + BOOTSTRAP Multiple Modules</a>
-                            | Not available yet 
-                        </li>
-                        <li>
-                            <a href="edit.html">A3 - JS + REACT Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A4 - STATE + SESSION Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A5 - NODE + SESSION Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A6 - MONGO MONGOOSE Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                    </ul>
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A1 SETUP</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                    Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Sep 18, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
 
-                    <h3> QUIZZES 10% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">Q1 - HTML Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q2 - CSS Multiple Modules</a>
-                            | Not available yet 
-                        </li>
-                        <li>
-                            <a href="edit.html">Q3 - JS, ES6 Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q4 - NODE Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q5 - MONGO Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                    </ul>
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A2 HTML</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                    Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Sep 25, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
 
-                    <h3> EXAMS 20% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">Midterm Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Final - CSS Multiple Modules</a>
-                            | Not available yet 
-                    </ul>
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A3 CSS</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                        Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Oct 2, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
 
-                    <h3> PROJECT 30% of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                            <option>Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">Project Multiple Modules</a>
-                            | Not available yet
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A4 BOOTSTRAP</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                        Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Oct 10, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
+
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A5 JAVASCRIPT</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                        Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Oct 10, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
+
+                            <li
+                            class="list-group-item py-3 d-flex"
+                            style="border-left: 6px solid green">
+                            <div
+                            class="col-1 d-flex align-items-center"
+                            style="font-size: x-large">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i
+                                class="fas fa-book"
+                                style="padding-left: 10px; color: green">
+                            </i>
+                            </div>
+                            <div class="col-9">
+                                <span>
+                                    <a
+                                    href="edit.html"
+                                    style="
+                                      color: black;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                    ">
+                                    A6 REACT</a>
+                                    </span>
+                                <div>
+                                    <small class="text-secondary">
+                                        Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2022) Module | <br />
+                                    <strong style="color: black">Due</strong> Oct 23, 2022, at 11:59 pm | 100 pts
+                                </small>
+                                </div>
+                            </div>
+                            <div
+                                class="col-2 d-flex align-items-center justify-content-end"
+                                style="font-size: large">
+                                <i
+                                    class="fas fa-check-circle"
+                                    style="color: green; padding-right: 15px">
+                                </i>
+                                <i class="fas fa-ellipsis-v" style="color: gray"></i>
+                            </div>
+                            </li>
+                        </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html> 

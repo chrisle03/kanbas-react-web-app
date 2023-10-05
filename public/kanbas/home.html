@@ -1,245 +1,746 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+    <head>    
+        <meta charset="UTF-8" />
         <title>Title</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
     </head>
     <body>
-        <table border="0" width="100%">
-            <tbody> 
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="profile/index.html">Account</a> 
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a> 
-                        </li>
-                        <li>
-                            <a href="home.html">Courses</a> 
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a> 
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a> 
-                        </li>
-                        <li>
-                            <a href="#">History</a> 
-                        </li>
-                        <li>
-                            <a href="#">Studio</a> 
-                        </li>
-                        <li>
-                            <a href="#">Commons</a> 
-                        </li>
-                        <li>
-                            <a href="#">Help</a> 
-                        </li>
-                    </ul>
-                </td>
+        <div
+        class="d-none d-sm-block d-md-none"
+        style="background-color: black; padding: 25px"
+        >
+            <div>
+                <h2 style="text-align: center; color: white; font-size: 16px">
+                    <a href="navigation/kanbas.html">
+                        <i class="fas fa-bars fa-lg" style="color: white; float: left"></i>
+                    </a>
 
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="home.html">Home</a> 
-                        </li>
-                        <li>
-                            <a href="#">Modules</a> 
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a> 
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meetings</a> 
-                        </li>
-                        <li>
-                            <a href="assignments/index.html">Assignments</a> 
-                        </li>
-                        <li>
-                            <a href="#">Quizzes</a> 
-                        </li>
-                        <li>
-                            <a href="grades.html">Grades</a> 
-                        </li>
-                        <li>
-                            <a href="#">People</a> 
-                        </li>
-                        <li>
-                            <a href="#">Panopto Video</a> 
-                        </li>
-                        <li>
-                            <a href="#">Discussions</a> 
-                        </li>
-                        <li>
-                            <a href="#">Announcements</a> 
-                        </li>
-                        <li>
-                            <a href="#">Pages</a> 
-                        </li>
-                        <li>
-                            <a href="#">Files</a> 
-                        </li>
-                        <li>
-                            <a href="#">Rubrics</a> 
-                        </li>
-                        <li>
-                            <a href="#">Outcomes</a> 
-                        </li>
-                        <li>
-                            <a href="#">Collaborations</a> 
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a> 
-                        </li>
-                        <li>
-                            <a href="#">Settings</a> 
-                        </li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <button>Collapse All</button>
-                    <button>View Progress</button>
-                    <select>
-                        <option>Publish All</option>
-                        <option>Export 1</option>
-                        <option>Export 2 </option>
-                    </select>
-                    <button>Module</button>
-                    <ul>
-                        <li>
-                            Week 0 - INTRO
-                            <ul>
-                                <li ul style="list-style-type:circle;">
-                                    LEARNING OBJECTIVES
-                                    <ul>
-                                        <li ul style="list-style-type:square;">
-                                            Introduction to the course
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Learn what is Web Development
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Creating a development environment
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Creating a Web Application
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Getting started with the 1st assignment
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li ul style="list-style-type:circle;">
-                                    READING
-                                    <ul>
-                                        <li ul style="list-style-type:square;">
-                                            Full Stack Developer - Chapter 1 - Introduction
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
-                                        </li>
-                                    </ul>   
-                                </li>
-                                <li ul style="list-style-type:circle;">
-                                    SLIDES
-                                    <ul>
-                                        <li ul style="list-style-type:square;">
-                                            <a href="home.html">Introduction to Web Development Links to an external sites.</a> 
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            <a href="home.html">Creating an HTTP server with Node.js Links to an external site.</a> 
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            <a href="home.html">Creating a React Application Links to an external site.</a> 
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Week 1 - HTML
-                            <ul>
-                                <li ul style="list-style-type:circle;">
-                                    LEARNING OBJECTIVES
-                                    <ul>
-                                        <li ul style="list-style-type:square;">
-                                            Learn how to create user interfaces with HTML
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Keep working on assignment 1
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Deploy the assignment to Netlify
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li ul style="list-style-type:circle;">
-                                    READING
-                                    <ul>
-                                        <li ul style="list-style-type:square;">
-                                            Full Stack Developer - Chapter 1 - Introduction
-                                        </li>
-                                        <li ul style="list-style-type:square;">
-                                            Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                        </li>
-                    </ul>
-                </td>
-
-                <td valign="top">
-                    <h2>Course Status</h2>
-
-                    <button>Unpublished</button>
-                    <button>Published</button>
+                    <span>CS4550.12631.202410 Module</span>
                     
-                    <ul>
-                        <li>
-                            <a href="#">Import Existing Content</a> 
-                        </li>
-                        <li>
-                            <a href="#">Import From Commons</a> 
-                        </li>
-                        <li>
-                            <a href="#">Choose Home Page</a> 
-                        </li>
-                        <li>
-                            <a href="#">View Course Stream</a> 
-                        </li>
-                        <li>
-                            <a href="#">New Announcement</a> 
-                        </li>
-                        <li>
-                            <a href="#">New Analytics</a> 
-                        </li>
-                        <li>
-                            <a href="#">View Course Notifcations</a> 
-                        </li>
-                    </ul>
+                    <a href="navigation/course.html">
+                        <i
+                        class="fas fa-chevron-down float-end mt-0"
+                        style="color: white"
+                        ></i>
+                    
+                    </a>
+                    <button
+                    class="btn btn-outline-secondary float-end"
+                    style="padding: 10; margin-right: 20px"
+                    >
+                        <i class="fas fa-glasses" style="color: white"></i>
+                    </button>
+                </h2>
+            </div>
+        </div>
 
-                    <h2>Comming Up</h2>
+        <div class="sidebar d-none d-lg-block">
+            <img src="../images/Northeastern Logo.png" alt="nLogo" height="80" width="80" />
+            <label for="sidebarToggle">
+                <a href="profile/index.html">
+                    <i class="fas fa-user-circle icon-white"></i><br />
+                    Account
+                </a> 
+            </label>
+            <label for="sidebarToggle">
+                <a href="dashboard.html">
+                  <i class="fas fa-tachometer-alt icon-red"></i><br />
+                  Dashboard
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a class="active" href="home.html">
+                  <i class="fas fa-book icon-red"></i><br />
+                  Courses
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#">
+                  <i class="fas fa-calendar-alt icon-red"></i><br />
+                  Calendar
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#">
+                  <i class="fas fa-envelope icon-red"></i><br />
+                  Inbox
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="far fa-clock icon-red"></i><br />
+                  History
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="fas fa-network-wired icon-red"></i><br />
+                  Studio
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                <i class="fas fa-share-square icon-red"></i><br />
+                  Commons
+                </a>
+            </label>
+            <label for="sidebarToggle">
+                <a href="#" id="accountLink">
+                  <i class="fas fa-question-circle icon-red"></i><br />
+                  Help
+                </a>
+            </label>
+        </div>
+        
+        <div class="content">
+            <div class="container">
+                <div class="col"></div>
+                <div class="row" style="padding-top: 15px">
+                    <div class="col-10 d-none d-md-block">
+                        <h2 style="font-size: 17px">
+                            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <i
+                                      class="fas fa-bars fa-lg"
+                                      style="color: red; padding-right: 18px"
+                                    ></i>
+                                    <li class="breadcrumb-item">
+                                      <a href="#">CS4550.12631.202410</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                      Home
+                                    </li>
+                                  </ol>
+                            </nav>
+                        </h2>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <button class="btn btn-secondary float-end">
+                            <i class="fas fa-glasses" style="color: black"> Student View</i>
+                        </button>
+                      </div>
+                    <hr/>
+                </div>
+                <div class="row">
+                    <div class="col-2 d-none d-lg-block" style="width: 195px">
+                        <div
+                        style="margin-bottom: 20px; max-width: 150px; overflow: hidden"
+                        >
+                            <small
+                            style="
+                                display: inline-block;
+                                max-width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                "
+                            >
+                            202410_1 Fall 2023 Semester Full Term
+                            </small> 
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="selected">
+                                    <a href="home.html">Home</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Modules</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Piazza</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Zoom Meetings</a> 
+                                </li>
+                                <li>
+                                    <a href="assignments/index.html">Assignments</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Quizzes</a> 
+                                </li>
+                                <li>
+                                    <a href="grades.html">Grades</a> 
+                                </li>
+                                <li>
+                                    <a href="#">People</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Panopto Video</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Discussions</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Announcements</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Files</a>
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Rubrics</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Outcomes</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Collaborations</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Syllabus</a> 
+                                    <i class="fas fa-eye-slash float-end"
+                                    style="color: black"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a> 
 
-                    <a href="#">View Calendar</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-7">
+                        <div class="float-end">
+                            <button class="btn btn-secondary">Collapse All</button>
+                            <button class="btn btn-secondary">View Progress</button>
+                            <button 
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            >
+                            Publish All
+                            </button>
+                            <button class="btn btn-danger">+ Module</button>
+                            <button class="btn btn-secondary">
+                                <i
+                                  style="color: white"
+                                  class="fa fa-ellipsis-v"
+                                  aria-hidden="true"
+                                ></i>
+                              </button>
+                        </div>
+                        <div style="padding-top: 35px"><hr/>
+                        </div>
+                        <div class="col">
+                            <ul class="list-group fixed-list-group" style="border-radius: 0">
+                                <li class="list-group-item list-group-item-secondary py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i class="fas fa-caret-down"></i>
+                                    Week 0 - INTRO
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-caret-down"></i>
+                                        <i
+                                        class="fas fa-plus"
+                                        style="
+                                            font-size: small;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            color: gray;"
+                                        ></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
 
-                    <ul>
-                        <li>
-                            <a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a> 
-                        </li>
-                        <li>
-                            <a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a> 
-                        </li>
-                        <li>
-                            <a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a> 
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category"> LEARNING OBJECTIVES</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Introduction to the course</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Learn what is Web Development</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Creating a development environment</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Creating a Web Application</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Getting started with the 1st assignment</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category"> READING</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Full Stack Developer - Chapter 1 - Introduction</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category"> SLIDES</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Introduction to Web Development</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Creating an HTTP server with Node.js</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Creating a React Applications</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+
+
+                                <li class="list-group-item list-group-item-secondary py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i class="fas fa-caret-down"></i>
+                                    Week 1 - HTML
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-caret-down"></i>
+                                        <i
+                                        class="fas fa-plus"
+                                        style="
+                                            font-size: small;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            color: gray;"
+                                        ></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category"> LEARNING OBJECTIVES</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Learn how to create user interfaces with HTML</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Keep working on assignment 1</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Deploy the assignment to Netlify</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category">READING</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    > Full Stack Developer - Chapter 1 - Introduction</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-right-shift"
+                                    >Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <span class="module-category"> SLIDES</span>
+                                    <div class="float-end">
+                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Introduction to HTML and the DOM</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Formatting Web content wit Headings and Paragraphs</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+
+                                <li class="list-group-item py-2">
+                                    <i class="fas fa-grip-vertical"></i>
+                                    <i
+                                        class="fas fa-link"
+                                        style="color: green; padding-left: 3px"
+                                        ></i>
+                                    <a
+                                        href="#"
+                                        style="
+                                        padding-left: 10px;
+                                        color: red;
+                                        text-decoration: none;"
+                                        >Formatting content with Lists and Tables</a> 
+                                        <i
+                                        class="fas fa-external-link-alt" style="color: red"
+                                        style="padding-left: 2px"
+                                        ></i>
+                                        <div class="float-end">
+                                            <i class="fas fa-check-circle" style="color: green"></i>
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-none d-lg-block" style="padding-left: 30px">
+                        <span>Course Status</span>
+                        <div class="btn-group" style="padding-bottom: 20px">
+                            <button
+                                type="button"
+                                style="height: 40px"
+                                class="btn btn-secondary"
+                            >
+                            <span>
+                                <i class="fas fa-ban"></i>
+                            </span>              
+                            Unpublish          
+                            </button>
+                            <button
+                                type="button"
+                                style="height: 40px"
+                                class="btn btn-success"
+                            >
+                            <span>
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                            Published
+                            </button>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            style="width: 235px; margin-top: 1px"
+                        >
+                        <span><i class="fas fa-file-import"></i></span>
+                        Import Existing Content
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-chevron-circle-right"></i></span>
+                        Import From Commons
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-bullseye"></i></span>
+                        Choose Home Page
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-chart-bar"></i></span>
+                        View Course Stream
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-bullhorn"></i></span>
+                        New Annoucement
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-chart-bar"></i></span>
+                        New Analytics
+                        </button>
+
+                        <button
+                        type="button"
+                        class="btn btn-secondary"
+                        style="width: 235px; margin-top: 2px"
+                        >
+                        <span><i class="fas fa-bell"></i></span>
+                        View Course Notifications
+                        </button>
+
+                        <h6 style="margin-top: 20px">To Do</h6>
+                        <hr />
+                        <span style="display: block">
+                            <i class="fas fa-dot-circle style=color: red"></i>
+                            <a href="#" style="text-decoration: none; color: red;">
+                                Grade A1 - ENV + HTML</a>
+                        </span>
+                        <small>100 points | Sep 18 at 11:59pm</small>
+                
+                        <div style="margin-top: 20px">
+                            <span>Comming Up</span>
+                            <span class="float-end">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span><a
+                                    href="#"
+                                    style="text-decoration: none; color: red; font-size: small">
+                                    View Calendar</a>
+                                </span>
+                            </span>
+                        </div>
+                        <hr/>
+
+                        <i class="fas fa-calendar-alt"></i>
+                        <span style="color: red">Lecture</span>
+                        <div>
+                            <small>
+                                CS4550.12631.202410
+                                <br/>
+                                Sep 11 at 11:45am
+                            </small>
+                        </div>
+
+                        <i class="fas fa-calendar-alt"></i>
+                        <span style="color: red">CS5610 06 SP23 Lecture</span>
+                        <div>
+                            <small>
+                                CS4550.12631.202410
+                                <br />
+                                Sep 11 at 6pm
+                            </small>
+                        </div>
+
+                        <div style="padding-bottom: 20px">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span style="color: red">
+                                CS5610 Web development Summer 1 2023 - LECTURE
+                            </span>
+                            <small>
+                                CS4550.12631.202410
+                                <br />
+                                Sep 11 at 7pm
+                            </small>
+                        </div>
+
+                        <small style="color: red">12 more in the next week...</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html> 
