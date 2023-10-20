@@ -3,63 +3,63 @@
       "_id": "1",
       "student": "121",
       "assignment": "A101",
-      "grade": "90"
+      "grade": "86"
     },
     {
       "_id": "2",
       "student": "122",
       "assignment": "A101",
-      "grade": "91"
+      "grade": "94"
     },
     {
       "_id": "3",
       "student": "123",
       "assignment": "A101",
-      "grade": "92"
+      "grade": "82"
     },
     {
       "_id": "4",
       "student": "121",
       "assignment": "A102",
-      "grade": "92"
+      "grade": "83"
     },
     {
       "_id": "5",
       "student": "122",
       "assignment": "A102",
-      "grade": "91"
+      "grade": "81"
     },
     {
       "_id": "6",
       "student": "123",
       "assignment": "A102",
-      "grade": "90"
+      "grade": "79"
     },
   
     {
       "_id": "7",
       "student": "124",
       "assignment": "A201",
-      "grade": "80"
+      "grade": "87"
     },
     {
       "_id": "8",
       "student": "125",
       "assignment": "A201",
-      "grade": "81"
+      "grade": "86"
     },
     {
       "_id": "9",
       "student": "126",
       "assignment": "A201",
-      "grade": "82"
+      "grade": "89"
     },
   
     {
       "_id": "10",
       "student": "124",
       "assignment": "A202",
-      "grade": "82"
+      "grade": "94"
     },
     {
       "_id": "11",
@@ -90,6 +90,6 @@
         "_id": "15",
         "student": "127",
         "assignment": "A301",
-        "grade": "80"
+        "grade": "83"
       }
   ]
