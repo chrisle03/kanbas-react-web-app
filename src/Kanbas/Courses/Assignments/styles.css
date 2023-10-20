@@ -1,0 +1,29 @@
+.float-end .fa-check-circle {
+    color: green;
+    padding-right: 10px;
+  }
+  
+  .float-end .fa-ellipsis-v {
+    color: grey;
+  }
+  
+  .module-right-shift {
+    padding-left: 35px;
+  }
+  
+  .module-category {
+    padding-left: 5px;
+  }
+  
+  .float-end .btn {
+    margin-left: 4px;
+  }
+  
+  .list-group-item .d-flex {
+    margin-bottom: 0px;
+    height: 70px;
+  }
+  
+  .list-group-item {
+      margin-bottom: 0px;
+  }

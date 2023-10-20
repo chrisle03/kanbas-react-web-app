@@ -1,0 +1,40 @@
+.sidebar {
+    width: 80px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    padding-top: 0px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    font-size: small;
+  }
+  
+  .sidebar .active {
+    background-color: white;
+    color: red;
+    width: 80px;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: white;
+    color: red;
+    width: 80px;
+  }
+  
+  .icon-red {
+    color: red;
+    font-size: x-large;
+  }
+  
+  .icon-white {
+    color: white;
+    font-size: x-large;
+  }

@@ -1,0 +1,23 @@
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: red;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  nav li.selected a {
+    color: black;
+    border-left: 3px solid black;
+    padding-left: 8px;
+  }
+
+  nav .header {
+    padding-bottom: 20px;
+  }

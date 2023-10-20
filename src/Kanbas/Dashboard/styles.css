@@ -1,0 +1,17 @@
+.content {
+    margin-left: 80px;
+    padding: 10px;
+  }
+
+  .card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px !important;
+    max-width: 100%;
+  }
+  
+  .card-link a {
+    text-decoration: none;
+  }
