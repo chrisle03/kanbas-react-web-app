@@ -34,7 +34,7 @@ function Dashboard({
                     <img src="../images/card.png" alt="Course Thumbnail" />
                     <div className="card-body">
                       <h6 className="card-link text-truncate">
-                        <Link to={`/Kanbas/Courses/${course._id}`}>
+                        <Link to={`/Kanbas/Courses/${course._id}/Home`}>
                           {course.name}
                         </Link>
                       </h6>

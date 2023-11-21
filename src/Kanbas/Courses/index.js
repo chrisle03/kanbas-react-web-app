@@ -6,12 +6,23 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
   const location = useLocation();
-  const currentItem = location.pathname.split('/').pop().replace(/%20/g, ' ');
+  const currentItem = location.pathname.split("/").pop().replace(/%20/g, " ");
+  
   return (
     <div className="content">
       <div className="row" style={{ paddingTop: "15px" }}>
