@@ -2,6 +2,12 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import "./styles.css"
+import {
+  setAssignment,
+  deleteAssignment,
+  setAssignments,
+} from "./assignmentsReducer";
+import * as client from "./client.js";
 
 function Assignments() {
   const { courseId } = useParams();

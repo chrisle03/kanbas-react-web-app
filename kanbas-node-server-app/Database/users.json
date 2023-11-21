@@ -1,0 +1,102 @@
+[
+    {
+      "_id": "121",
+      "username": "iron_man",
+      "password": "stark123",
+      "firstName": "Monkey D",
+      "lastName": "Luffy",
+      "email": "tony@stark.com",
+      "dob": "1990-09-19",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "122",
+      "username": "dark_knight",
+      "password": "wayne123",
+      "firstName": "Roronoa",
+      "lastName": "Zoro",
+      "email": "bruce@wayne.com",
+      "dob": "1948-01-12",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "123",
+      "username": "capt_america",
+      "password": "rogers123",
+      "firstName": "Tony Tony",
+      "lastName": "Chopper",
+      "email": "steve@avengers.com",
+      "dob": "1948-03-24",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "124",
+      "username": "black_widow",
+      "password": "romanoff123",
+      "firstName": "Nico",
+      "lastName": "Robin",
+      "email": "natasha@avengers.com",
+      "dob": "1932-15-12",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "125",
+      "username": "thor_odinson",
+      "password": "mjolnir123",
+      "firstName": "Usopp",
+      "lastName": "Sogeking",
+      "email": "thor@asgard.com",
+      "dob": "982-12-13",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "126",
+      "username": "hulk_smash",
+      "password": "banner123",
+      "firstName": "Nami",
+      "lastName": "Cat",
+      "email": "bruce@avengers.com",
+      "dob": "1923-12-31",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "127",
+      "username": "ring_bearer",
+      "password": "shire123",
+      "firstName": "Sanji",
+      "lastName": "Vinsmoke",
+      "email": "frodo@shire.com",
+      "dob": "1724-12-29",
+      "role": "FACULTY"
+    },
+    {
+      "_id": "128",
+      "username": "strider",
+      "password": "aragorn123",
+      "firstName": "Franky",
+      "lastName": "Cyborg",
+      "email": "aragorn@gondor.com",
+      "dob": "2615-23-11",
+      "role": "FACULTY"
+    },
+    {
+      "_id": "129",
+      "username": "elf_archer",
+      "password": "legolas123",
+      "firstName": "Brook",
+      "lastName": "Soul King",
+      "email": "legolas@mirkwood.com",
+      "dob": "2418-07-15",
+      "role": "FACULTY"
+    },
+    {
+        "_id": "130",
+        "username": "elf_archer",
+        "password": "legolas123",
+        "firstName": "Jimbei",
+        "lastName": "Fishman",
+        "email": "legolas@mirkwood.com",
+        "dob": "4979-07-15",
+        "role": "FACULTY"
+      }
+  ]
