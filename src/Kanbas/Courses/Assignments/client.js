@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
-const COURSES_URL = `${API_BASE}/courses`;
-const ASSSIGNMENTS_URL = `${API_BASE}/assignments`;
+const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000";
+const COURSES_URL = `${API_BASE}/api/courses`;
+const ASSSIGNMENTS_URL = `${API_BASE}/api/assignments`;
 export const updateAssignment = async (assignment) => {
   const response = await axios.put(
     `${ASSSIGNMENTS_URL}/${assignment._id}`,
